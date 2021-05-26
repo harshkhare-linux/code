@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /var/www/html/secd
+     destination: /var/www/html/secd/
 permissions:
-   - object: /var/www/html/secd
+   - object: /var/www/html/secd/
      pattern: "**"
      owner: ubuntu
      group: ubuntu
