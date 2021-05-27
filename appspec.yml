@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-   - source: /
+   - source: Second
      destination: /var/www/html/secd
 file_exists_behavior: OVERWRITE
 permissions:
