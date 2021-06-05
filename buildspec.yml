@@ -21,19 +21,10 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
-  batch:
-  build-list:
-    - identifier: build1
-      env:
-        compute-type: BUILD_GENERAL1_SMALL
-    - identifier: build2
-      env:
-        compute-type: BUILD_GENERAL1_MEDIUM
-
-phases:
-  build:
-    commands:
-      - echo 'file' > output_file    
+batch:
+  fast-fail: false
+  build-graph:
+    - identifier: build1   
 artifacts:
   files:
     - '**/*'
