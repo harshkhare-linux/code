@@ -28,7 +28,7 @@ batch:
 batch:
   fast-fail: false
   build-graph:
-    - identifier: iind      
+    - identifier: secondbuild      
 artifacts:
   files:
     - '**/*'
