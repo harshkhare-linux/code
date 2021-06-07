@@ -24,11 +24,11 @@ phases:
 batch:
   fast-fail: false
   build-graph:
-    - identifier:ist   
+    - identifier: ist   
 batch:
   fast-fail: false
   build-graph:
-    - identifier:secondbuild       
+    - identifier: secondbuild       
 artifacts:
   files:
     - '**/*'
