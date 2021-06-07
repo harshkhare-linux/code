@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - apt-get update -y
+     
     finally:
       - echo This always runs even if the update or install command fails 
   pre_build:
@@ -24,7 +24,11 @@ phases:
 batch:
   fast-fail: false
   build-graph:
-    - identifier: build1   
+    - identifier: soucre   
+batch:
+  fast-fail: false
+  build-graph:
+    - identifier: iind      
 artifacts:
   files:
     - '**/*'
